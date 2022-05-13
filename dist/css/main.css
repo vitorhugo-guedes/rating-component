@@ -5,15 +5,97 @@
   padding: 0;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex: 0 1 25rem;
+  padding: 1.5rem 2rem;
+  border-radius: 25px;
+  background-color: hsl(213deg, 19%, 18%);
+}
+.card img {
+  border-radius: 100%;
+  padding: 0.6em 0.6em;
+  background-color: rgba(124, 135, 152, 0.1);
+}
+.card p {
+  color: hsl(217deg, 12%, 63%);
+}
+.card .text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.card .rating-btn--wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  inline-size: 100%;
+}
+.card .rating-btn--wrapper .rating-btn {
+  border-radius: 100%;
+  padding: 0.95em 1.3em;
+  color: hsl(217deg, 12%, 63%);
+  background-color: rgba(124, 135, 152, 0.1);
+  transition: all ease 0.2s;
+}
+.card .rating-btn--wrapper .rating-btn:hover {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(216deg, 12%, 54%);
+}
+.card .rating-btn--wrapper .rating-btn:active {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 97%, 53%);
+}
+.card .submit-btn {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  inline-size: 100%;
+  padding: 0.75em 0em;
+  border-radius: 30px;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 97%, 53%);
+  transition: all ease 0.3s;
+}
+.card .submit-btn:hover {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(0deg, 0%, 100%);
+}
+
 body {
   display: grid;
   place-items: center;
-  height: 100vh;
+  min-height: 100vh;
   color: hsl(0deg, 0%, 100%);
   font-weight: 400;
+  font-display: swap;
   font-family: "Overpass", sans-serif;
+  background-color: hsl(216deg, 12%, 8%);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  padding: 1rem 0rem;
 }
 
 p {
   font-size: 15px;
+  line-height: 1.5;
+}
+
+button {
+  cursor: pointer;
+  font-size: 15px;
+  border: none;
+  background: transparent;
 }/*# sourceMappingURL=main.css.map */

@@ -5,8 +5,13 @@
     padding: 0;
 }
 
+// breakpoints
+$mobile: 375px;
+$desktop: 1440px;
+
 // Colors
 $primary-color: hsl(25, 97%, 53%);
+$rating-btn-color: rgba(124, 135, 152, 0.1);
 
 $white: hsl(0, 0%, 100%);
 $light-grey: hsl(217, 12%, 63%);
@@ -19,4 +24,11 @@ $card-background: hsl(213, 19%, 18%);
 @mixin grid-center {
     display: grid;
     place-items: center;
+}
+
+@mixin flex($direction: row, $align: center, $justify: center){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
 }

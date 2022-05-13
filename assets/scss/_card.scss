@@ -1,4 +1,66 @@
 
 .card{
-    
+    @include flex(column, flex-start, space-between);
+
+    gap: 1.5rem;
+    flex: 0 1 25rem;
+    padding: 1.5rem 2rem;
+    // min-height: 22rem;
+    // max-inline-size: 25rem;
+
+    border-radius: 25px;
+    background-color: $card-background;
+
+    & img{
+        border-radius: 100%;
+        padding: 0.60em 0.60em;
+        background-color: $rating-btn-color;
+    }
+    & p {
+        color: $light-grey;
+    }
+    & .text-wrapper{
+        @include flex(column, flex-start);
+        gap: 0.5rem;
+    }
+    & .rating-btn--wrapper{
+        @include flex(row, center, space-between);
+        inline-size: 100%;
+
+        .rating-btn {
+            border-radius: 100%;
+            padding: 0.95em 1.30em;
+            
+            color: $light-grey;
+            background-color: $rating-btn-color;
+            
+            transition: all ease 0.2s;
+            &:hover{
+                color: $white;
+                background-color: $medium-grey;
+            }
+            &:active{
+                color: $white;
+                background-color: $primary-color;
+            }
+        }
+    }
+
+    & .submit-btn{
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+
+        inline-size: 100%;
+        padding: 0.75em 0em;
+        border-radius: 30px;
+
+        color: $white;
+        background-color: $primary-color;
+
+        transition: all ease 0.3s;
+        &:hover{
+            color: $primary-color;
+            background-color: $white;
+        }
+    }
 }
