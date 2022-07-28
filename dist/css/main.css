@@ -5,6 +5,31 @@
   padding: 0;
 }
 
+.thank-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.thank-card .display-rate {
+  color: hsl(25deg, 97%, 53%);
+  font-weight: 500;
+  padding: 0.3em 1em;
+  border-radius: 14px;
+  background-color: rgba(124, 135, 152, 0.1);
+}
+.thank-card .text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.thank-card .text-wrapper p {
+  text-align: center;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -12,17 +37,14 @@
   justify-content: space-between;
   gap: 1.5rem;
   flex: 0 1 25rem;
-  padding: 1.5rem 2rem;
-  border-radius: 25px;
-  background-color: hsl(213deg, 19%, 18%);
 }
-.card img {
+.card .star-icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.75rem;
   border-radius: 100%;
-  padding: 0.6em 0.6em;
   background-color: rgba(124, 135, 152, 0.1);
-}
-.card p {
-  color: hsl(217deg, 12%, 63%);
 }
 .card .text-wrapper {
   display: flex;
@@ -31,25 +53,27 @@
   justify-content: center;
   gap: 0.5rem;
 }
-.card .rating-btn--wrapper {
+.card .rating-btns {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   inline-size: 100%;
 }
-.card .rating-btn--wrapper .rating-btn {
+.card .rating-btns .rating-btns__rating {
   border-radius: 100%;
   padding: 0.95em 1.3em;
+}
+.card .rating-btns .rating-btn--color {
   color: hsl(217deg, 12%, 63%);
   background-color: rgba(124, 135, 152, 0.1);
   transition: all ease 0.2s;
 }
-.card .rating-btn--wrapper .rating-btn:hover {
+.card .rating-btns .rating-btn--color:hover {
   color: hsl(0deg, 0%, 100%);
   background-color: hsl(216deg, 12%, 54%);
 }
-.card .rating-btn--wrapper .rating-btn:active {
+.card .rating-btns .rating-btn--color:active, .card .rating-btns .rating-btn--color:focus {
   color: hsl(0deg, 0%, 100%);
   background-color: hsl(25deg, 97%, 53%);
 }
@@ -66,6 +90,14 @@
 .card .submit-btn:hover {
   color: hsl(25deg, 97%, 53%);
   background-color: hsl(0deg, 0%, 100%);
+}
+
+.container {
+  min-height: 22rem;
+  max-inline-size: 25rem;
+  padding: 2.5rem 2rem;
+  border-radius: 25px;
+  background-color: hsl(213deg, 19%, 18%);
 }
 
 body {
@@ -88,9 +120,14 @@ main {
   padding: 1rem 0rem;
 }
 
+.hide {
+  display: none;
+}
+
 p {
   font-size: 15px;
   line-height: 1.5;
+  color: hsl(217deg, 12%, 63%);
 }
 
 button {

@@ -1,0 +1,20 @@
+.thank-card {
+  @include flex(column);
+  gap: 1.5rem;
+
+  .display-rate {
+    color: $primary-color;
+    font-weight: 500;
+    padding: 0.3em 1em;
+    border-radius: 14px;
+    background-color: $rating-btn-color;
+  }
+  .text-wrapper {
+    @include flex(column);
+    gap: 0.5rem;
+
+    p {
+      text-align: center;
+    }
+  }
+}

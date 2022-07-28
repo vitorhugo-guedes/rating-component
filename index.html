@@ -1,48 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./dist/css/main.css">
-  <title>Frontend Mentor | Interactive rating component</title>
-
-</head>
-<body>
-
-  <main>
-
-    <div class="card">
-      <i><img src="./assets/images/icon-star.svg" alt="icon star"></i>
-
-      <div class="text-wrapper">
-        <h1>How did we do?</h1>
-        <p>
-          Please let us know how we did with your support request.
-          All feedback is appreciated
-          to help us improve our offering!
-        </p>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./dist/css/main.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div id="card" class="card">
+          <div class="star-icon">
+            <img src="./assets/images/icon-star.svg" alt="star" />
+          </div>
+          <div class="text-wrapper">
+            <h1>How did we do?</h1>
+            <p>
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+          </div>
+          <div class="rating-btns">
+            <button data-rate="1" class="rating-btns__rating rating-btn--color">
+              1
+            </button>
+            <button data-rate="2" class="rating-btns__rating rating-btn--color">
+              2
+            </button>
+            <button data-rate="3" class="rating-btns__rating rating-btn--color">
+              3
+            </button>
+            <button data-rate="4" class="rating-btns__rating rating-btn--color">
+              4
+            </button>
+            <button data-rate="5" class="rating-btns__rating rating-btn--color">
+              5
+            </button>
+          </div>
+          <button id="submitBtn" class="submit-btn">Submit</button>
+        </div>
+        <div id="thankCard" class="hide thank-card">
+          <div>
+            <img
+              src="./assets/images/illustration-thank-you.svg"
+              alt="thank image"
+            />
+          </div>
+          <p class="display-rate">
+            You selected <span id="displayRate">1</span> out of 5
+          </p>
+          <div class="text-wrapper">
+            <h1>Thank you!</h1>
+            <p>
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don’t hesitate to get in touch!
+            </p>
+          </div>
+        </div>
       </div>
+    </main>
 
-      <div class="rating-btn--wrapper">
-        <button class="rating-btn">1</button>
-        <button class="rating-btn">2</button>
-        <button class="rating-btn">3</button>
-        <button class="rating-btn">4</button>
-        <button class="rating-btn">5</button>
-      </div>
-
-      <button class="submit-btn">Submit</button>
-    </div>
-
-  </main>
-
-  <!-- <footer class="attribution">
+    <!-- <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Vitor Hugo</a>.
   </footer> -->
 
-  <script src="./dist/js/main.js"></script>
-</body>
+    <script src="./dist/js/main.js"></script>
+  </body>
 </html>

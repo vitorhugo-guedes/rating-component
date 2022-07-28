@@ -1,66 +1,61 @@
+.card {
+  @include flex(column, flex-start, space-between);
+  gap: 1.5rem;
+  flex: 0 1 25rem;
 
-.card{
-    @include flex(column, flex-start, space-between);
+  & .star-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.75rem;
 
-    gap: 1.5rem;
-    flex: 0 1 25rem;
-    padding: 1.5rem 2rem;
-    // min-height: 22rem;
-    // max-inline-size: 25rem;
+    border-radius: 100%;
+    background-color: $rating-btn-color;
+  }
+  & .text-wrapper {
+    @include flex(column, flex-start);
+    gap: 0.5rem;
+  }
+  & .rating-btns {
+    @include flex(row, center, space-between);
+    inline-size: 100%;
 
-    border-radius: 25px;
-    background-color: $card-background;
-
-    & img{
-        border-radius: 100%;
-        padding: 0.60em 0.60em;
-        background-color: $rating-btn-color;
+    & .rating-btns__rating {
+      border-radius: 100%;
+      padding: 0.95em 1.3em;
     }
-    & p {
-        color: $light-grey;
-    }
-    & .text-wrapper{
-        @include flex(column, flex-start);
-        gap: 0.5rem;
-    }
-    & .rating-btn--wrapper{
-        @include flex(row, center, space-between);
-        inline-size: 100%;
+    .rating-btn--color {
+      color: $light-grey;
+      background-color: $rating-btn-color;
 
-        .rating-btn {
-            border-radius: 100%;
-            padding: 0.95em 1.30em;
-            
-            color: $light-grey;
-            background-color: $rating-btn-color;
-            
-            transition: all ease 0.2s;
-            &:hover{
-                color: $white;
-                background-color: $medium-grey;
-            }
-            &:active{
-                color: $white;
-                background-color: $primary-color;
-            }
-        }
-    }
-
-    & .submit-btn{
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-
-        inline-size: 100%;
-        padding: 0.75em 0em;
-        border-radius: 30px;
-
+      transition: all ease 0.2s;
+      &:hover {
+        color: $white;
+        background-color: $medium-grey;
+      }
+      &:active,
+      &:focus {
         color: $white;
         background-color: $primary-color;
-
-        transition: all ease 0.3s;
-        &:hover{
-            color: $primary-color;
-            background-color: $white;
-        }
+      }
     }
+  }
+
+  & .submit-btn {
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    inline-size: 100%;
+    padding: 0.75em 0em;
+    border-radius: 30px;
+
+    color: $white;
+    background-color: $primary-color;
+
+    transition: all ease 0.3s;
+    &:hover {
+      color: $primary-color;
+      background-color: $white;
+    }
+  }
 }

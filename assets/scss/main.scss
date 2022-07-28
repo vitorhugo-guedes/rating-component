@@ -1,36 +1,39 @@
-@import 'config', 'card';
+@import "config", "thank-card", "card", "container";
 
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 
 body {
-    @include grid-center;
+  @include grid-center;
 
-    min-height: 100vh;
+  min-height: 100vh;
 
-    color: $white;
-    font-weight: 400;
-    font-display: swap;
-    font-family: 'Overpass', sans-serif;
+  color: $white;
+  font-weight: 400;
+  font-display: swap;
+  font-family: "Overpass", sans-serif;
 
-    background-color: $background;
+  background-color: $background;
 }
 
-main{
-    @include flex;
-    width: 100vw;
-    padding: 1rem 0rem;
+main {
+  @include flex;
+  width: 100vw;
+  padding: 1rem 0rem;
 
-    // background-color: lightcoral;
+  // background-color: lightcoral;
 }
-
+.hide {
+  display: none;
+}
 p {
-    font-size: 15px;
-    line-height: 1.5;
+  font-size: 15px;
+  line-height: 1.5;
+  color: $light-grey;
 }
 
-button{
-    cursor: pointer;
-    font-size: 15px;
-    border: none;
-    background: transparent;
+button {
+  cursor: pointer;
+  font-size: 15px;
+  border: none;
+  background: transparent;
 }

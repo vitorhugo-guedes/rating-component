@@ -1,8 +1,8 @@
 // Resets
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 // breakpoints
@@ -22,13 +22,13 @@ $card-background: hsl(213, 19%, 18%);
 
 // Reusable
 @mixin grid-center {
-    display: grid;
-    place-items: center;
+  display: grid;
+  place-items: center;
 }
 
-@mixin flex($direction: row, $align: center, $justify: center){
-    display: flex;
-    flex-direction: $direction;
-    align-items: $align;
-    justify-content: $justify;
+@mixin flex($direction: row, $align: center, $justify: center) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
 }
