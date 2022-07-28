@@ -18,9 +18,7 @@ body {
 main {
   @include flex;
   width: 100vw;
-  padding: 1rem 0rem;
-
-  // background-color: lightcoral;
+  padding: 1rem 0.5rem;
 }
 .hide {
   display: none;
@@ -36,4 +34,17 @@ button {
   font-size: 15px;
   border: none;
   background: transparent;
+}
+
+footer {
+  width: 100%;
+  padding: 0rem 1rem;
+  display: flex;
+  align-self: end;
+  justify-content: center;
+  margin-bottom: 10px;
+  & a {
+    color: $white;
+    text-decoration: none;
+  }
 }

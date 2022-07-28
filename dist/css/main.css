@@ -70,11 +70,11 @@
   transition: all ease 0.2s;
 }
 .card .rating-btns .rating-btn--color:hover {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 85%);
   background-color: hsl(216deg, 12%, 54%);
 }
 .card .rating-btns .rating-btn--color:active, .card .rating-btns .rating-btn--color:focus {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 85%);
   background-color: hsl(25deg, 97%, 53%);
 }
 .card .submit-btn {
@@ -83,13 +83,13 @@
   inline-size: 100%;
   padding: 0.75em 0em;
   border-radius: 30px;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 85%);
   background-color: hsl(25deg, 97%, 53%);
   transition: all ease 0.3s;
 }
 .card .submit-btn:hover {
   color: hsl(25deg, 97%, 53%);
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0deg, 0%, 85%);
 }
 
 .container {
@@ -104,7 +104,7 @@ body {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 85%);
   font-weight: 400;
   font-display: swap;
   font-family: "Overpass", sans-serif;
@@ -117,7 +117,7 @@ main {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  padding: 1rem 0rem;
+  padding: 1rem 0.5rem;
 }
 
 .hide {
@@ -135,4 +135,17 @@ button {
   font-size: 15px;
   border: none;
   background: transparent;
+}
+
+footer {
+  width: 100%;
+  padding: 0rem 1rem;
+  display: flex;
+  align-self: end;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+footer a {
+  color: hsl(0deg, 0%, 85%);
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
