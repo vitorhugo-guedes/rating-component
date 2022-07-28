@@ -85,6 +85,7 @@
   border-radius: 30px;
   color: hsl(0deg, 0%, 85%);
   background-color: hsl(25deg, 97%, 53%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   transition: all ease 0.3s;
 }
 .card .submit-btn:hover {
@@ -95,7 +96,7 @@
 .container {
   min-height: 22rem;
   max-inline-size: 25rem;
-  padding: 2.5rem 2rem;
+  padding: 2.25rem 1.75rem;
   border-radius: 25px;
   background-color: hsl(213deg, 19%, 18%);
 }
